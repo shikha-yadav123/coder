@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  
+    <title>welcome </title>
+    
+  </head>
+  <style>
+    P{
+      color: pink;
+      
+    } 
+    Password{
+      color: blue;
+    } 
+  </style>
+<body>
+
+<p>Click the radio button :</p>
+
+Password: <input type="password" value="Lion" id="myInput" style="color:blue"><br><br>
+<input type="checkbox" onclick="myFunction()">Show Password 
+  
+</style>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+</body>
+</html>
